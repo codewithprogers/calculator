@@ -32,3 +32,44 @@ body {
   background-color: white;
   border-radius: 0.5rem;
 }
+
+#keyPad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.05rem;
+  height: 4.05rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  border: 1px solid #999999;
+  border-radius: 1rem;
+  aspect-ratio: 1;
+}
+
+.text {
+  font-size: 2rem;
+  font-family: "Helvetica", sans-serif;
+}
+
+.plus, .minus {
+  display: inline-block;
+}
+
+.plus {
+  position: relative;
+  top: -0.3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.minus {
+  position: relative;
+  font-weight: 300;
+}
