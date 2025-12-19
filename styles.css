@@ -55,7 +55,7 @@ body {
 
 .text {
   font-size: 2rem;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .plus, .minus {
@@ -71,5 +71,5 @@ body {
 
 .minus {
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
 }
