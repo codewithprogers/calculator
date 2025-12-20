@@ -25,12 +25,20 @@ body {
 }
 
 .calcScreen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 18rem;
   height: 5rem;
   border: 1px solid #999999;
   margin-top: 2rem;
   background-color: white;
   border-radius: 0.5rem;
+}
+
+.display {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3rem;
 }
 
 #keyPad {
