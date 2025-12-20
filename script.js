@@ -13,3 +13,16 @@ const operate = (operator, a, b) => {
   if (operator === "*") return multiply(a, b);
   if (operator === "/") return divide(a, b);
 };
+
+let choice = "";
+const display = function (){
+  const keyPad = document.getElementById("keyPad");
+  keyPad.addEventListener("click", (event) => {
+    if (event.target.classList.contains("number")) {
+      choice += event.target.textContent;
+      document.getElementById("screenDisplay").textContent = choice
+    };
+  });
+};
+
+display();

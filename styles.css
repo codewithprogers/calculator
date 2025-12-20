@@ -36,7 +36,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.display {
+#screenDisplay {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 3rem;
 }
