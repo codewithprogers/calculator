@@ -73,3 +73,9 @@ body {
   position: relative;
   font-weight: 400;
 }
+
+.undoIcon {
+  width: 70%;
+  height: 70%;
+  display: block;
+}
