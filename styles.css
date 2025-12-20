@@ -53,9 +53,22 @@ body {
   aspect-ratio: 1;
 }
 
+.button.action {
+  background-color: #5a5a5a;
+}
+
+.button.operator {
+  background-color: #ff9200;
+}
+
+.button.number, .notation {
+  background-color: #2f2f2f;
+}
+
 .text {
   font-size: 2rem;
   font-family: "Helvetica Neue", sans-serif;
+  color: #f2f2f2;
 }
 
 .plus, .minus {
@@ -78,4 +91,5 @@ body {
   width: 70%;
   height: 70%;
   display: block;
+  color: #f2f2f2;
 }
