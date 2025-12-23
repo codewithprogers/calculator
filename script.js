@@ -19,7 +19,9 @@ const display = function (){
   const keyPad = document.getElementById("keyPad");
   keyPad.addEventListener("click", (event) => {
     if (event.target.classList.contains("number")) {
-      choice += event.target.textContent;
+      if (choice.length < 10) {
+        choice += event.target.textContent;
+      };
       document.getElementById("screenDisplay").textContent = choice
     };
   });
