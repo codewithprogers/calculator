@@ -19,10 +19,10 @@ const display = function (){
   const keyPad = document.getElementById("keyPad");
   keyPad.addEventListener("click", (event) => {
     if (event.target.classList.contains("number")) {
-      if (choice.length < 10) {
+      if (choice.length < 9) {
         choice += event.target.textContent;
       };
-      document.getElementById("screenDisplay").textContent = choice
+      document.getElementById("screenDisplay").textContent = Number(choice).toLocaleString();
     };
   });
 };
