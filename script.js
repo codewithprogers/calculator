@@ -73,6 +73,14 @@ const display = function () {
       operator = null;
     }
 
+    else if (target.classList.contains("back")) {
+      if (choice.length === 0) return;
+
+      let back = choice.slice(0, -1);
+      choice = back;
+      screen.textContent = back === "" ? "0" : back;
+    }
+
     else if (target.classList.contains("allClear")) {
       screen.textContent = "0";
       firstNumber = null;
