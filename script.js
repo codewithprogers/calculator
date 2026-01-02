@@ -72,6 +72,14 @@ const display = function () {
       firstNumber = result;
       operator = null;
     }
+
+    else if (target.classList.contains("allClear")) {
+      screen.textContent = "0";
+      firstNumber = null;
+      operator = null;
+      secondNumber = null;
+      choice = "";
+    }
   });
 };
 
