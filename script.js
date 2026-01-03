@@ -32,6 +32,12 @@ const display = function () {
     const target = event.target;
 
     if (target.classList.contains("number")) {
+      target.classList.add("numberHover-enabled");
+
+      target.addEventListener("mouseleave", () => {
+        target.classList.remove("numberHover-enabled");
+      });
+
       if (choice.length < 9) {
         choice += target.textContent;
       }
